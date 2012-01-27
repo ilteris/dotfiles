@@ -1,4 +1,4 @@
-THIS IS THE README FOR MY DOTFILES
+----THIS IS THE README FOR MY DOTFILES-----
 it keeps vimrc and vim folder for now which needs to be symlink after cloned. 
 ln -s ~/dotfiles/vim ~/.vim
 ln -s ~/dotfiles/vim ~/.vimrc
