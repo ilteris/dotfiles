@@ -1,0 +1,7 @@
+THIS IS THE README FOR MY DOTFILES
+it keeps vimrc and vim folder for now which needs to be symlink after cloned. 
+ln -s ~/dotfiles/vim ~/.vim
+ln -s ~/dotfiles/vim ~/.vimrc
+
+when making a symlink, absolute is very frequently the best option, so ln -s ~/dotfiles/vim ~/.vim  (note the lack of trailing slash on the .vim dir)
+also, if you're going to use relative paths in your ln command, it's better link from the directory that's going to contain the link, rather than from the directory that contains the link's destination
