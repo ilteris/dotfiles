@@ -4,4 +4,4 @@ ln -s ~/dotfiles/vim ~/.vim
 ln -s ~/dotfiles/vimrc ~/.vimrc
 
 when making a symlink, absolute is very frequently the best option, so ln -s ~/dotfiles/vim ~/.vim  (note the lack of trailing slash on the .vim dir)
-also also, if you're going to use relative paths in your ln command, it's better link from the directory that's going to contain the link, rather than from the directory that contains the link's destination
+also, if you're going to use relative paths in your ln command, it's better link from the directory that's going to contain the link, rather than from the directory that contains the link's destination
