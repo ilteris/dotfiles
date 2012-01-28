@@ -1,0 +1,9 @@
+*.o
+*.pyc
+*.pyo
+*.bak
+*.so
+vim/.netrwhist
+vim/sessions
+vim/undodir
+vim/.VimballRecord

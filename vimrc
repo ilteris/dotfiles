@@ -7,7 +7,7 @@ let mapleader="," "mapping for command+t
 set laststatus=2
 set t_Co=256
 set background=dark
-
+call pathogen#helptags()
 "ruby and rails 
 "set path+=/path/to/your/rails-application/app/**
 set path+=/path/to/your/rails-application/lib/**
