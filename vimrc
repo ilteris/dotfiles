@@ -59,6 +59,6 @@ autocmd InsertLeave * set nocursorline
 autocmd InsertEnter * set cursorline
 
 "Highlight cursor
-highlight CursorLine ctermbg=7 cterm=NONE
+highlight CursorLine ctermbg=8 cterm=NONE
 "Incremental search
 set incsearch
