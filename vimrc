@@ -32,6 +32,42 @@ noremap  <Left> ""
 noremap! <Left> <Esc>
 noremap  <Right> ""
 noremap! <Right> <Esc>
+"nvie vim commands
+set history=1000         " remember more commands and search history
+set hidden
+set nobackup
+set noswapfile
+"Vim can highlight whitespaces for you in a convenient way
+set list
+set listchars=tab:>.,trail:.,extends:#,nbsp:.
+"In some files, like HTML and XML files, tabs are fine and showing them is really annoying, you can disable them easily using an autocmd declaration:
+autocmd filetype html,xml set listchars-=tab:>.
+
+
+set undolevels=1000      " use many muchos levels of undo
+set wildignore=*.swp,*.bak,*.pyc,*.class
+set title                " change the terminal's title
+set visualbell           " don't beep
+set noerrorbells         " don't beep
+
+set pastetoggle=<F2>
+set nowrap        " don't wrap lines
+set tabstop=4     " a tab is four spaces
+set backspace=indent,eol,start
+                  " allow backspacing over everything in insert mode
+set autoindent    " always set autoindenting on
+set copyindent    " copy the previous indentation on autoindenting
+set number        " always show line numbers
+set shiftwidth=4  " number of spaces to use for autoindenting
+set shiftround    " use multiple of shiftwidth when indenting with '<' and '>'
+set showmatch     " set show matching parenthesis
+set ignorecase    " ignore case when searching
+set smartcase     " ignore case if search pattern is all lowercase,
+                  "    case-sensitive otherwise
+set smarttab      " insert tabs on the start of a line according to
+                  "    shiftwidth, not tabstop
+set hlsearch      " highlight search terms
+set incsearch     " show search matches as you type
 
 
 "If the exuberant ctags utility is not present in your PATH, then set the 
@@ -55,7 +91,6 @@ set shell=/bin/sh "this is rvm hack https://rvm.beginrescueend.com/integration/v
 colorscheme zenburn
 let g:zenburn_force_dark_Background=1
 "set guifont=Inconsolata:h16
-set number
 
 "Higlight current line only in insert mode
 autocmd InsertLeave * set nocursorline
