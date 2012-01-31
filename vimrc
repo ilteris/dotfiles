@@ -19,7 +19,10 @@ set includeexpr+=substitute(v:fname,'s$','','g')
 "
 "https://weblion.psu.edu/trac/weblion/wiki/MacVim
 filetype on
-
+"ragtags mappings
+inoremap <M-o>       <Esc>o
+inoremap <C-j>       <Down>
+let g:ragtag_global_maps = 1
 "disable the arrow keys for now
 noremap  <Up> ""
 noremap! <Up> <Esc>
