@@ -20,6 +20,16 @@ set includeexpr+=substitute(v:fname,'s$','','g')
 "https://weblion.psu.edu/trac/weblion/wiki/MacVim
 filetype on
 
+"disable the arrow keys for now
+noremap  <Up> ""
+noremap! <Up> <Esc>
+noremap  <Down> ""
+noremap! <Down> <Esc>
+noremap  <Left> ""
+noremap! <Left> <Esc>
+noremap  <Right> ""
+noremap! <Right> <Esc>
+
 
 "If the exuberant ctags utility is not present in your PATH, then set the 
 "Tlist_Ctags_Cmd variable to point to the location of the exuberant ctags 
