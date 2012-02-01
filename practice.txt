@@ -1,0 +1,16 @@
+mP
+H is move to the top of the buffer
+
+G is move to the last line of buffer
+move the text from bottom line to top line is $m0
+pA copies everything from the yank to the current buffer
+%y a yanks all the text on the current buffer
+%d deletes everything on the current buffer
+O inserts a new line under cursor and goes into insert mode
+anytime you are on vim you can type :'P to come back here.
+to reverse the order of lines is :g/^/m0 read --> help global
+:m is move --> ranges are $ is end 0 is start . is current. so in order to move current line to second line :.m2
+:h range is your friend
+c-R redos the undo .
+:so ~/.vimrc is to update the current buffer so it reflects the latest .vimr
+

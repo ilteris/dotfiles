@@ -39,7 +39,7 @@ set nobackup
 set noswapfile
 "Vim can highlight whitespaces for you in a convenient way
 set list
-set listchars=tab:>.,trail:.,extends:#,nbsp:.
+"set listchars=tab:>.,trail:.,extends:#,nbsp:.
 "In some files, like HTML and XML files, tabs are fine and showing them is really annoying, you can disable them easily using an autocmd declaration:
 autocmd filetype html,xml set listchars-=tab:>.
 
