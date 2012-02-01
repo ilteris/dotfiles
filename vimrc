@@ -100,3 +100,6 @@ autocmd InsertEnter * set cursorline
 highlight CursorLine ctermbg=8 cterm=NONE
 "Incremental search
 set incsearch
+"my vim mappings
+nmap <F3> :vsp<bar>bp<cr>
+nmap <F4> :vsp<bar>bn<cr>
