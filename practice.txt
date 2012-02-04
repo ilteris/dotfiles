@@ -1,4 +1,5 @@
 mP
+git submodule foreach git pull origin master
 H is move to the top of the buffer
 
 G is move to the last line of buffer
