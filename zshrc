@@ -77,3 +77,5 @@ export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/Library/Frameworks/Python.
 
 
 export EDITOR=vi
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
