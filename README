@@ -8,3 +8,10 @@ bindkey|grep line #list all the key shortcuts on zsh line
 
 when making a symlink, absolute is very frequently the best option, so ln -s ~/dotfiles/vim ~/.vim  (note the lack of trailing slash on the .vim dir)
 also, if you're going to use relative paths in your ln command, it's better link from the directory that's going to contain the link, rather than from the directory that contains the link's destination
+
+git submodule init in the ~/dotfiles dir.
+git submodule update 
+
+if at any time, you'd like to remove a submodule, remove it from the .gitmodules
+and then git rm --caches /vim/bundles/submodule and then usual deal.
+
