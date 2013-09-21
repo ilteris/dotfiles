@@ -93,8 +93,9 @@ let g:zenburn_high_Contrast=1
 colorscheme zenburn
 
 "Higlight current line only in insert mode
-autocmd InsertLeave * set nocursorline
-autocmd InsertEnter * set cursorline
+#autocmd InsertLeave * set nocursorline
+#autocmd InsertEnter * set cursorline
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 
 "Highlight cursor
 hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
