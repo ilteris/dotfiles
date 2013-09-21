@@ -23,15 +23,6 @@ filetype on
 inoremap <M-o>       <Esc>o
 inoremap <C-j>       <Down>
 let g:ragtag_global_maps = 1
-"disable the arrow keys for now
-noremap  <Up> ""
-noremap! <Up> <Esc>
-noremap  <Down> ""
-noremap! <Down> <Esc>
-noremap  <Left> ""
-noremap! <Left> <Esc>
-noremap  <Right> ""
-noremap! <Right> <Esc>
 "nvie vim commands
 set history=1000         " remember more commands and search history
 set hidden
@@ -91,13 +82,8 @@ set shell=/bin/sh "this is rvm hack https://rvm.beginrescueend.com/integration/v
 "set guifont=Inconsolata:h16
 let g:zenburn_high_Contrast=1
 colorscheme zenburn
-
-"Higlight current line only in insert mode
-"autocmd InsertLeave * set nocursorline
-"#autocmd InsertEnter * set cursorline
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-
-"Highlight cursor
+autocmd InsertLeave * set nocursorline
+autocmd InsertEnter * set cursorline   
 hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 "highlight CursorLine ctermbg=8 cterm=NONE
 "Incremental search
