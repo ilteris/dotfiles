@@ -88,16 +88,17 @@ helptags ~/.vim/doc
 
 "default
 set shell=/bin/sh "this is rvm hack https://rvm.beginrescueend.com/integration/vim/
-colorscheme zenburn
-let g:zenburn_force_dark_Background=1
 "set guifont=Inconsolata:h16
+let g:zenburn_high_Contrast=1
+colorscheme zenburn
 
 "Higlight current line only in insert mode
 autocmd InsertLeave * set nocursorline
 autocmd InsertEnter * set cursorline
 
 "Highlight cursor
-highlight CursorLine ctermbg=8 cterm=NONE
+hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+"highlight CursorLine ctermbg=8 cterm=NONE
 "Incremental search
 set incsearch
 "my vim mappings
