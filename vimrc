@@ -68,3 +68,4 @@ autocmd InsertEnter * set cursorline
 "highlight CursorLine ctermbg=8 cterm=NONE
 "Incremental search
 set incsearch
+let g:auto_save_no_updatetime = 1  " do not change the 'updatetime' option" for vim-autosave plugin
