@@ -7,15 +7,20 @@ set laststatus=2
 call pathogen#helptags()
 "map ctrlP to c-\
 nnoremap <c-\> :CtrlP<CR> 
- "settings needed for solarized colorscheme
+nnoremap <leader>w <C-w>v<C-w>l ",w opens a vertical split and makes it active"
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
  set background=dark
 colorscheme solarized
+
 
 "ragtags mappings
 inoremap <M-o>       <Esc>o
 inoremap <C-j>       <Down>
 let g:ragtag_global_maps = 1
-"nvie vim commands
 set history=1000         " remember more commands and search history
 set hidden
 set nobackup
@@ -68,4 +73,4 @@ autocmd InsertEnter * set cursorline
 "highlight CursorLine ctermbg=8 cterm=NONE
 "Incremental search
 set incsearch
-let g:auto_save_no_updatetime = 1  " do not change the 'updatetime' option" for vim-autosave plugin
+

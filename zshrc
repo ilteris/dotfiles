@@ -76,6 +76,5 @@ export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/Library/Frameworks/Python.
 # Finished adapting your PATH environment variable for use with MacPorts.
 
 
-export EDITOR=vi
-
+export EDITOR=/usr/local/bin/vim
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
