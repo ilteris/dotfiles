@@ -10,10 +10,11 @@ nnoremap <c-\> :CtrlP<CR>
 nnoremap <leader>w <C-w>v<C-w>l ",w opens a vertical split and makes it active"
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
+
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr> "load vimrc easily"
-map <C-n> :NERDTreeToggle<CR> "togglenerdtree"
+nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC " load vimrc easily"
+map <C-n> :NERDTreeToggle "togglenerdtree"
 set background=dark
 colorscheme solarized
 
