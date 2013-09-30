@@ -58,3 +58,6 @@
 [submodule "vim/bundle/vim-jsbeautify"]
 	path = vim/bundle/vim-jsbeautify
 	url = https://github.com/maksimr/vim-jsbeautify.git
+[submodule "vim/bundle/lustyjugger"]
+	path = vim/bundle/lustyjugger
+	url = https://github.com/vim-scripts/LustyJuggler.git

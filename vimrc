@@ -18,6 +18,7 @@ map <C-n> :NERDTreeToggle "togglenerdtree"
 set background=dark
 colorscheme solarized
 
+set clipboard+=unnamed
 
 "ragtags mappings
 inoremap <M-o>       <Esc>o
