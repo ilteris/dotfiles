@@ -8,6 +8,7 @@ call pathogen#helptags()
 "map ctrlP to c-\
 nnoremap <c-\> :CtrlP<CR> 
 nnoremap <leader>w <C-w>v<C-w>l ",w opens a vertical split and makes it active"
+nnoremap <leader>h <C-w>s<C-w>l ",h opens a horizontal split and makes it active"
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 
