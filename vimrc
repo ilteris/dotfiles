@@ -20,6 +20,7 @@ set background=dark
 colorscheme solarized
 
 set clipboard+=unnamed
+let g:slime_target = "tmux"
 
 "ragtags mappings
 inoremap <M-o>       <Esc>o
