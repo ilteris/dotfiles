@@ -58,3 +58,6 @@
 [submodule "vim/bundle/lustyjugger"]
 	path = vim/bundle/lustyjugger
 	url = https://github.com/vim-scripts/LustyJuggler.git
+[submodule "vim/bundle/tslime"]
+	path = vim/bundle/tslime
+	url = https://github.com/teranex/tslime.vim.git
