@@ -61,3 +61,6 @@
 [submodule "vim/bundle/tslime"]
 	path = vim/bundle/tslime
 	url = https://github.com/teranex/tslime.vim.git
+[submodule "vim/bundle/ultisnips"]
+	path = vim/bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips.git

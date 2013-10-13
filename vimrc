@@ -81,4 +81,23 @@ autocmd InsertEnter * set cursorline
 "highlight CursorLine ctermbg=8 cterm=NONE
 "Incremental search
 set incsearch
+"https://github.com/Valloric/YouCompleteMe/issues/36#issuecomment-15451411
+"YCM/ ultisnips integration per above url
+function! g:UltiSnips_Complete()
+    call UltiSnips_ExpandSnippet()
+    if g:ulti_expand_res == 0
+        if pumvisible()
+            return "\<C-n>"
+        else
+            call UltiSnips_JumpForwards()
+            if g:ulti_jump_forwards_res == 0
+               return "\<TAB>"
+            endif
+        endif
+    endif
+    return ""
+endfunction
+"create an automatic bufEnter
+au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
 
