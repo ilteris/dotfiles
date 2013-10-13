@@ -20,7 +20,10 @@ set background=dark
 colorscheme solarized
 
 set clipboard+=unnamed
-let g:slime_target = "tmux"
+"keybindings for tslime
+vmap <C-c><C-c> <Plug>SendSelectionToTmux
+nmap <C-c><C-c> <Plug>NormalModeSendToTmux
+nmap <C-c>r <Plug>SetTmuxVars
 
 "ragtags mappings
 inoremap <M-o>       <Esc>o
