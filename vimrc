@@ -1,3 +1,5 @@
+" Requires for 256 colors in OS X iTerm(2)
+set t_Co=256
 set nocp
 call pathogen#infect()
 syntax on
