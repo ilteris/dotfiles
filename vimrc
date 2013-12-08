@@ -13,9 +13,9 @@ nnoremap <leader>w <C-w>v<C-w>l ",w opens a vertical split and makes it active"
 nnoremap <leader>h <C-w>s<C-w>l ",h opens a horizontal split and makes it active"
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
-
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+"vimrc shortcut
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC " load vimrc easily"
 map <C-n> :NERDTreeToggle "togglenerdtree"
 set background=dark
@@ -85,8 +85,15 @@ autocmd InsertEnter * set cursorline
 set incsearch
 
 
-"let g:UltiSnipsExpandTrigger="<c-j>"
-"let g:UltiSnipsJumpForwardTrigger="<c-j>"
-"let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+" ultisnips.
+ let g:UltiSnipsEditSplit = 'vertical'
+ let g:UltiSnipsJumpForwardTrigger = '<tab>'
+" let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+" let g:UltiSnipsSnippetDirectories = [ 'snippets'  ]
+
+ 
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 
