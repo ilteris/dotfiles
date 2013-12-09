@@ -86,14 +86,13 @@ set incsearch
 
 
 " ultisnips.
- let g:UltiSnipsEditSplit = 'vertical'
- let g:UltiSnipsJumpForwardTrigger = '<tab>'
-" let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
-" let g:UltiSnipsSnippetDirectories = [ 'snippets'  ]
+let g:UltiSnipsUsePythonVersion = 2
+"let g:UltiSnipsExpandTrigger="<c-j>"
+"let g:UltiSnipsJumpForwardTrigger="<c-j>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
- 
-let g:UltiSnipsExpandTrigger="<c-j>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+" Ultisnips settings
+" let g:UltiSnipsExpandTrigger = "<C-j>"
+ let g:UltiSnipsSnippetsDir = "~/.vim/bundle/ultisnips/UltiSnips"
 
 
