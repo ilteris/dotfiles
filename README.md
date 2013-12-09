@@ -33,7 +33,8 @@ one, can see the snippets in the vim/bundle/ultrasnips/ dir. general key is
 ###NeoComplete
 It's a completion engine with cache. It works with <C-R> 
 
-
+###vim-easyMotion
+Allows better move in the buffer. <Leader><Leader>w is a good start. 
 
 
 
