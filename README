@@ -1,4 +1,4 @@
-----THIS IS THE README FOR MY DOTFILES-----
+#Dotfiles 
 it keeps vimrc and vim folder for now which needs to be symlink after cloned. 
 ln -s ~/dotfiles/vim ~/.vim
 ln -s ~/dotfiles/vimrc ~/.vimrc
@@ -18,4 +18,24 @@ and then git rm --caches /vim/bundles/submodule and then usual deal.
 
 don't forget to symlink the ftdetect dir for ultisnips.
 ln -s bundle/ultisnips/ftdetect/* ftdetect
+
+
+
+##Plugins
+###MatchTag
+It matches opening/closing  html tags when cursor is over it.
+
+###Ultisnips
+It helps writing code faster by using snippets. Each language have a different
+one, can see the snippets in the vim/bundle/ultrasnips/ dir. general key is
+<TAB> after first few letters of the snippet name.
+
+###NeoComplete
+It's a completion engine with cache. It works with <C-R> 
+
+
+
+
+
+
 
