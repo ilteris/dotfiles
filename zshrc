@@ -20,6 +20,12 @@ export PATH=$PATH:/usr/local/pgsql/bin
 export PATH=$PATH:/Library/PostgreSQL/8.3/bin
 
 # Unbreak broken, non-colored terminal
+# Appends every command to the history file once it is executed 
+setopt inc_append_history 
+ # Reloads the history whenever you use it
+setopt share_history
+
+
 export TERM='xterm-color'
 alias ls='ls -G'
 alias ll='ls -lG'
