@@ -17,7 +17,7 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 "vimrc shortcut
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC " load vimrc easily"
-map <C-n> :NERDTreeToggle "togglenerdtree"
+map <C-n> :NERDTreeToggle  " togglenerdtree"
 set background=dark
 colorscheme base16-ocean
 
