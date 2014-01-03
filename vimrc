@@ -18,8 +18,8 @@ nnoremap <C-l> <C-w>l
 "vimrc shortcut
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC " load vimrc easily"
 map <C-n> :NERDTreeToggle "togglenerdtree"
-"set background=dark
-"colorscheme solarized
+set background=dark
+colorscheme base16-ocean
 
 set clipboard+=unnamed
 "keybindings for tslime
