@@ -1,5 +1,5 @@
 " Requires for 256 colors in OS X iTerm(2)
-set t_Co=256
+"set t_Co=256
 set nocp
 call pathogen#infect()
 syntax on
@@ -18,8 +18,8 @@ nnoremap <C-l> <C-w>l
 "vimrc shortcut
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC " load vimrc easily"
 map <C-n> :NERDTreeToggle "togglenerdtree"
-set background=dark
-colorscheme solarized
+"set background=dark
+"colorscheme solarized
 
 set clipboard+=unnamed
 "keybindings for tslime
