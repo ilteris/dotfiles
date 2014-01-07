@@ -88,7 +88,10 @@ set incsearch
 " ultisnips.
 let g:UltiSnipsUsePythonVersion = 2
 "let g:UltiSnipsExpandTrigger="<c-j>"
-"let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsListSnippets="<leader><tab>"
+
 "let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " Ultisnips settings
@@ -135,3 +138,6 @@ inoremap <C-k> <ESC>:m .-2<CR>==gi
 " Visual mode
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
+
+"make vim indent tags below
+let g:html_indent_inctags = "html,body,head,tbody"
