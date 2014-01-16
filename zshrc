@@ -83,3 +83,5 @@ export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/Library/Frameworks/Python.
 
 export EDITOR=/usr/local/bin/vim
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+bindkey '^R' history-incremental-search-backward

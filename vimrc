@@ -141,3 +141,4 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 
 "make vim indent tags below
 let g:html_indent_inctags = "html,body,head,tbody"
+set wrap
