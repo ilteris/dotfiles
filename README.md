@@ -15,6 +15,9 @@ git submodule update
 if at any time, you'd like to remove a submodule, remove it from the .gitmodules
 and then git rm --caches /vim/bundles/submodule and then usual deal.
 
+git config core.pager 'less -r' 
+You can also use git config to setup pager to wrap when you do git diff
+
 
 don't forget to symlink the ftdetect dir for ultisnips.
 ln -s bundle/ultisnips/ftdetect/* ftdetect
