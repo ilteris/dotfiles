@@ -11,9 +11,6 @@ export PATH=/usr/local/sbin:/usr/local/bin:${PATH}
 export PATH="$PATH:~/.gem/ruby/1.8/bin"
 export PATH=${PATH}:~/android-sdk-macosx/platform-tools:~/android-sdk-macosx/tools
 
-# Add RVM function setup instructions
-unsetopt auto_name_dirs
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
 
 # Add postgres to the path
@@ -83,6 +80,5 @@ export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/Library/Frameworks/Python.
 
 
 export EDITOR=/usr/local/bin/vim
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 bindkey '^R' history-incremental-search-backward
