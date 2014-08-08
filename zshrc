@@ -8,8 +8,7 @@ compinit
 
 # Add paths that should have been there by default
 export PATH=/usr/local/sbin:/usr/local/bin:${PATH}
-export PATH="$PATH:~/.gem/ruby/1.8/bin"
-export PATH=${PATH}:~/android-sdk-macosx/platform-tools:~/android-sdk-macosx/tools
+# export PATH="$PATH:~/.gem/ruby/1.8/bin"
 
 
 
@@ -82,3 +81,6 @@ export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/Library/Frameworks/Python.
 export EDITOR=/usr/local/bin/vim
 
 bindkey '^R' history-incremental-search-backward
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm"  ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
