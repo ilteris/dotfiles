@@ -29,3 +29,14 @@ build/*
 xcuserdata
 profile
 *.moved-aside
+
+
+#node.js
+build/Release
+node_modules
+logs
+*.log
+pids
+*.pid
+*.seed
+
