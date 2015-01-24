@@ -79,3 +79,9 @@
 [submodule "tmux/plugins/tmux-resurrect"]
 	path = tmux/plugins/tmux-resurrect
 	url = https://github.com/tmux-plugins/tmux-resurrect.git
+[submodule "vim/bundle/vim-obsession"]
+	path = vim/bundle/vim-obsession
+	url = git://github.com/tpope/vim-obsession.git
+[submodule "vim/bundle/vim-prosession"]
+	path = vim/bundle/vim-prosession
+	url = git://github.com/dhruvasagar/vim-prosession.git
