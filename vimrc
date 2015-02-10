@@ -17,7 +17,13 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 "vimrc shortcut
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC " load vimrc easily"
-map <C-n> :NERDTreeToggle  " togglenerdtree"
+"nerdtree
+map <C-n> :NERDTreeToggle<CR>  "togglenerdtree
+autocmd vimenter * NERDTree
+"close vim if the only window left open is a NERDTree
+
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
 set background=dark
 colorscheme base16-ocean
 
@@ -143,3 +149,8 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 let g:html_indent_inctags = "html,body,head,tbody"
 set wrap
 let g:sparkupNextMapping = '<c-x>'
+"session.vim autosaves the session on quit
+let g:session_autosave = 'yes'
+
+
+

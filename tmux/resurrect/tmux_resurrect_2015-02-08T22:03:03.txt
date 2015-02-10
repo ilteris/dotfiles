@@ -1,0 +1,25 @@
+pane	0	1	:zsh	1	:*	1	:/Users/ilteris	1	zsh	:
+pane	2	1	:zsh	1	:*	1	:/Users/ilteris	1	zsh	:
+pane	3	1	:zsh	1	:*	1	:/Users/ilteris	1	zsh	:
+pane	terminal	1	:zsh	0	:#	1	:/Users/ilteris/Desktop/example-d3-react	1	vim	:vim README.md build.js ghpages.js gulpfile.js index.html package.json webpack.config.js
+pane	terminal	2	:vim	0	:#	1	:/Users/ilteris/Desktop/flux	1	vim	:vim gulpfile.js readme.md
+pane	terminal	3	:zsh	0	: 	1	:/Users/ilteris/dotfiles	1	zsh	:
+pane	terminal	4	:parser	0	:-	1	:/Users/ilteris/Documents/CODE/WEB/ilteris.github.io	1	ruby	:ruby /usr/local/bin/rake preview
+pane	terminal	5	:zsh	1	:*	1	:/Users/ilteris/Downloads/exitwp/build/jekyll/www.klaweht.comblog	1	zsh	:
+pane	terminal	6	:qwzrd	0	: 	1	:/Users/ilteris/Documents/CODE/iOS/Qwzrd/Qwzrd	1	zsh	:
+pane	terminal	7	:ssh	0	: 	1	:/Users/ilteris/Desktop	1	zsh	:
+pane	terminal	8	:vim	0	: 	1	:/Users/ilteris/Desktop/myPortfolio	1	vim	:vim Gemfile.lock config.rb
+pane	terminal	9	:zsh	0	: 	1	:/Users/ilteris/Documents/CODE/WEB/ilteris.github.io	1	vim	:vim CHANGELOG.markdown Gemfile.lock README.markdown README.md _config.yml atom.xml config.rb config.ru favicon.ico favicon.png index.html robots.txt sitemap.xml
+window	0	1	1	:*	d03d,178x48,0,0,0
+window	2	1	1	:*	d03e,178x48,0,0,1
+window	3	1	1	:*	d03f,178x48,0,0,2
+window	terminal	1	0	:#	d040,178x48,0,0,3
+window	terminal	2	0	:#	d041,178x48,0,0,4
+window	terminal	3	0	: 	d042,178x48,0,0,5
+window	terminal	4	0	:-	d043,178x48,0,0,6
+window	terminal	5	1	:*	d044,178x48,0,0,7
+window	terminal	6	0	: 	d045,178x48,0,0,8
+window	terminal	7	0	: 	d046,178x48,0,0,9
+window	terminal	8	0	: 	684f,178x48,0,0,10
+window	terminal	9	0	: 	6850,178x48,0,0,11
+state	terminal	terminal
