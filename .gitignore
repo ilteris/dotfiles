@@ -7,3 +7,4 @@ vim/.netrwhist
 vim/sessions
 vim/undodir
 vim/.VimballRecord
+tmux/resurrect/*

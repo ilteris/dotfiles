@@ -151,6 +151,7 @@ set wrap
 let g:sparkupNextMapping = '<c-x>'
 "session.vim autosaves the session on quit
 let g:session_autosave = 'yes'
-
+set cpoptions+=$ 
+"add a $ sign at the end of the c
 
 
