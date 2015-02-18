@@ -153,5 +153,5 @@ let g:sparkupNextMapping = '<c-x>'
 let g:session_autosave = 'yes'
 set cpoptions+=$ 
 "add a $ sign at the end of the c
-
-
+set virtualedit=all
+"set virtual edit to move freely in the buffer
