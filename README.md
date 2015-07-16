@@ -14,6 +14,9 @@ then
 `git submodule foreach git pull origin master` to update them.
 
 
+once tmux is aliased, run tmux and in order to activate resurrect, make sure to
+run `Ctrl+a Ctrl+i` to install the plugins including resurrect. Then you will
+have sessions. 
 `bindkey|grep line` #list all the key shortcuts on zsh line
 
 when making a symlink, absolute is very frequently the best option, so `ln -s ~/dotfiles/vim ~/.vim`  (note the lack of trailing slash on the .vim dir)
