@@ -1,5 +1,8 @@
 " Requires for 256 colors in OS X iTerm(2)
+let base16colorspace=256 " Access colors present in 256 colorspace
 set t_Co=256
+set background=dark
+colorscheme base16-ocean
 set nocp
 call pathogen#infect()
 syntax on
@@ -23,9 +26,6 @@ autocmd vimenter * NERDTree
 "close vim if the only window left open is a NERDTree
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-
-set background=dark
-colorscheme base16-ocean
 
 set clipboard+=unnamed
 "keybindings for tslime
@@ -155,3 +155,5 @@ set cpoptions+=$
 "add a $ sign at the end of the c
 set virtualedit=all
 "set virtual edit to move freely in the buffer
+
+"let g:airline_theme='luna'
