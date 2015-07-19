@@ -9,7 +9,7 @@
 	url = https://github.com/mbadran/headlights.git
 [submodule "vim/bundle/tagbar"]
 	path = vim/bundle/tagbar
-	url = git://github.com/majutsushi/tagbar.git
+	url = https://github.com/majutsushi/tagbar.git
 [submodule "vim/bundle/vim-nodejs-complete"]
 	path = vim/bundle/vim-nodejs-complete
 	url = https://github.com/myhere/vim-nodejs-complete.git
@@ -90,4 +90,4 @@
 	url = https://github.com/bling/vim-airline.git
 [submodule "base16-shell"]
 	path = base16-shell
-	url = https://github.com/chriskempson/base16-shell
+	url = https://github.com/chriskempson/base16-shell.git
