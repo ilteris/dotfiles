@@ -1,4 +1,4 @@
-#Dotfiles 
+ #Dotfiles 
 it keeps vimrc and vim folder for now which needs to be symlink after cloned. 
 `ln -s ~/dotfiles/vim ~/.vim`
 `ln -s ~/dotfiles/vimrc ~/.vimrc`
@@ -54,4 +54,4 @@ Allows better move in the buffer. <Leader><Leader>w is a good start.
 TB continued
 
 
-
+ 
