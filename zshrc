@@ -8,7 +8,6 @@ compinit
 
 # Add paths that should have been there by default
 export PATH=/usr/local/sbin:/usr/local/bin:${PATH}
-# export PATH="$PATH:~/.gem/ruby/1.8/bin"
 
 
 
@@ -82,10 +81,20 @@ export EDITOR=/usr/local/bin/vim
 
 bindkey '^R' history-incremental-search-backward
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm"  ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+ # enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    #alias grep='grep --color=auto'
+    #alias fgrep='fgrep --color=auto'
+    #alias egrep='egrep --color=auto'
+fi
+ 
 # Base16 Shell
- BASE16_SCHEME="ocean"
+BASE16_SCHEME="tomorrow"
  BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
  [[ -s $BASE16_SHELL  ]] && . $BASE16_SHELL
 

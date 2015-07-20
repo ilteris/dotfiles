@@ -1,8 +1,9 @@
 " Requires for 256 colors in OS X iTerm(2)
-let base16colorspace=256 " Access colors present in 256 colorspace
+let base16colorspace=256
+" Access colors present in 256 colorspace
 set t_Co=256
 set background=dark
-colorscheme base16-ocean
+"colorscheme base16-tomorrow
 set nocp
 call pathogen#infect()
 syntax on
