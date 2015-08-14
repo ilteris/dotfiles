@@ -3,6 +3,7 @@ it keeps vimrc and vim folder for now which needs to be symlink after cloned.
 `ln -s ~/dotfiles/vim ~/.vim`
 `ln -s ~/dotfiles/vimrc ~/.vimrc`
 `ln -s ~/dotfiles/tmux ~/.tmux`
+`ln -s ~/dotfiles/tmux.conf ~/.tmux.conf`
 `ln -s ~/dotfiles/zsh ~/.zsh`
 `ln -s ~/dotfiles/zshrc ~/.zshrc`
 `ln -s ~/dotfiles/zshenv ~/.zshenv`
