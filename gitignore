@@ -6,7 +6,8 @@
 /tmp
 /db/*.sqlite3
 
-
+# Exclude .gitignore
+.gitignore
 
 
 # Exclude temp nibs and swap files

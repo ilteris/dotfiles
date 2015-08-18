@@ -158,3 +158,5 @@ set virtualedit=all
 "set virtual edit to move freely in the buffer
 
 "let g:airline_theme='luna'
+set tabstop=2 shiftwidth=2 expandtab
+set tags=./tags,tags;$HOME
