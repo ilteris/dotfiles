@@ -6,16 +6,19 @@
 /tmp
 /db/*.sqlite3
 tags
-<<<<<<< HEAD
 
-=======
->>>>>>> 9f042a0... instance commits
+#tmux plugin 
+last/*
 
 
 # Exclude .gitignore
 .gitignore
 tmux/resurrect/last
 tmux/resurrect/*
+# Exclude temp nibs and swap files
+*~.nib
+*.swp
+
 # Exclude temp nibs and swap files
 *~.nib
 *.swp
@@ -45,5 +48,4 @@ logs
 *.log
 pids
 *.pid
-*.seed
 
