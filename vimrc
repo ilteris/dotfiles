@@ -2,7 +2,7 @@
 let base16colorspace=256
 " Access colors present in 256 colorspace
 set t_Co=256
-set background=dark
+"set background=dark
 "colorscheme base16-tomorrow
 set nocp
 call pathogen#infect()
@@ -19,6 +19,7 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+noremap % v% "highlights between two brackets
 "vimrc shortcut
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC " load vimrc easily"
 "nerdtree
@@ -54,7 +55,6 @@ set noerrorbells         " don't beep
 
 set pastetoggle=<F2>
 set nowrap        " don't wrap lines
-set tabstop=4     " a tab is four spaces
 set backspace=indent,eol,start
                   " allow backspacing over everything in insert mode
 set autoindent    " always set autoindenting on
@@ -82,7 +82,6 @@ setlocal softtabstop=4
 setlocal shiftwidth=4
 setlocal textwidth=80
 setlocal smarttab
-setlocal expandtab
 helptags ~/.vim/doc
 hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 autocmd InsertLeave * set nocursorline
@@ -156,5 +155,8 @@ set cpoptions+=$
 "add a $ sign at the end of the c
 set virtualedit=all
 "set virtual edit to move freely in the buffer
+:hi Directory guifg=#FF0000 ctermfg=red "nerdtree directory color red
 
 "let g:airline_theme='luna'
+set tabstop=2 shiftwidth=2 expandtab
+set tags=./tags,tags;$HOME

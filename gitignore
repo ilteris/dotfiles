@@ -6,7 +6,8 @@
 /tmp
 /db/*.sqlite3
 
-
+#tmux plugin 
+last/*
 
 
 # Exclude temp nibs and swap files
