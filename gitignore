@@ -6,7 +6,10 @@
 /tmp
 /db/*.sqlite3
 tags
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9f042a0... instance commits
 
 
 # Exclude .gitignore
