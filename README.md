@@ -3,11 +3,14 @@ it keeps vimrc and vim folder for now which needs to be symlink after cloned.
 `ln -s ~/dotfiles/vim ~/.vim`
 `ln -s ~/dotfiles/vimrc ~/.vimrc`
 `ln -s ~/dotfiles/tmux ~/.tmux`
+`ln -s ~/dotfiles/tmux.conf ~/.tmux.conf`
 `ln -s ~/dotfiles/zsh ~/.zsh`
 `ln -s ~/dotfiles/zshrc ~/.zshrc`
 `ln -s ~/dotfiles/zshenv ~/.zshenv`
 `ln -s ~/dotfiles/zsh ~/.zsh`
 `ln -s ~/dotfiles/gitignore ~/.gitignore`
+`ln -s ~/dotfiles/base16-shell/ ~/.config/base16-shell`
+
 
 `git submodule update --init --recursive` in the ~/dotfiles dir when first clone the dotfiles
 then
