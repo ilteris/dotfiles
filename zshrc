@@ -7,15 +7,9 @@ autoload -U compinit
 compinit
 
 # Add paths that should have been there by default
+export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/Library/Frameworks/Python.framework/Versions/2.6/bin:/opt/local/lib/mysql5/bin:$PATH
 export PATH=/usr/local/sbin:/usr/local/bin:${PATH}
 
-
-
-# Add postgres to the path
-export PATH=$PATH:/usr/local/pgsql/bin
-export PATH=$PATH:/Library/PostgreSQL/8.3/bin
-
-# Unbreak broken, non-colored terminal
 # Appends every command to the history file once it is executed 
 setopt inc_append_history 
  # Reloads the history whenever you use it
@@ -71,11 +65,6 @@ function whodoneit() {
         done
     )
 }
-
-# MacPorts Installer addition on 2010-04-21_at_09:59:50: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/Library/Frameworks/Python.framework/Versions/2.6/bin:/opt/local/lib/mysql5/bin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-
 
 export EDITOR=/usr/local/bin/vim
 
