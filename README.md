@@ -46,6 +46,10 @@ if you are on *nix, compile it from source.
 once tmux is aliased, run tmux and in order to activate resurrect, make sure to
 run `Ctrl+a Ctrl+i` to install the plugins including resurrect. Then you will
 have sessions. 
+
+git config --global core.excludesfile '~/.gitignore'
+
+
 `bindkey|grep line` #list all the key shortcuts on zsh line
 when making a symlink, absolute is very frequently the best option, so `ln -s ~/dotfiles/vim ~/.vim`  (note the lack of trailing slash on the .vim dir) also, if you're going to use relative paths in your ln command, it's better link from the directory that's going to contain the link, rather than from the directory that contains the link's destination  if at any time, you'd like to remove a submodule, remove it from the .gitmodules
 and then `git rm --caches /vim/bundles/submodule` and then usual deal. `git config core.pager 'less -r' ` You can also use git config to setup pager to wrap when you do git diff.  don't forget to symlink the ftdetect dir for ultisnips. `ln -s bundle/ultisnips/ftdetect/* ftdetect`
