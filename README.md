@@ -76,8 +76,18 @@ Allows better move in the buffer. <Leader><Leader>w is a good start.
 ###nerdComment
 <leader>cc comments the line
 
-NERDTree
+###NERDTree
 File Explorer. 
+
+###Fugitive
+Use it as your git diff tool 
+
+Configure like 
+
+````
+git config --global mergetool.fugitive.cmd 'vim -f -c "Gdiff" "$MERGED"'
+git config --global merge.tool fugitive
+````
 
 
 
