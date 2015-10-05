@@ -1,9 +1,0 @@
-pane	terminal	1	:zsh	0	: 	1	:/Users/ilteris/dotfiles/vim/bundle	1	zsh	:
-pane	terminal	2	:vim	0	:#-	1	:/Users/ilteris/Desktop/flux	1	vim	:vim gulpfile.js readme.md
-pane	terminal	3	:zsh	0	: 	1	:/Users/ilteris/dotfiles	1	zsh	:
-pane	terminal	4	:vim	1	:*	1	:/Users/ilteris/Desktop/Parser	1	vim	:vim index.js package.json
-window	terminal	1	0	: 	ad7d,144x40,0,0,0
-window	terminal	2	0	:#-	ad7e,144x40,0,0,1
-window	terminal	3	0	: 	ad7f,144x40,0,0,2
-window	terminal	4	1	:*	ad80,144x40,0,0,3
-state	terminal	terminal

@@ -5,10 +5,19 @@
 /log
 /tmp
 /db/*.sqlite3
+tags
 
 #tmux plugin 
 last/*
 
+
+# Exclude .gitignore
+.gitignore
+tmux/resurrect/last
+tmux/resurrect/*
+# Exclude temp nibs and swap files
+*~.nib
+*.swp
 
 # Exclude temp nibs and swap files
 *~.nib
@@ -39,5 +48,4 @@ logs
 *.log
 pids
 *.pid
-*.seed
 
