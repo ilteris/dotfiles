@@ -92,10 +92,9 @@ if [ -x /usr/bin/dircolors ]; then
     #alias fgrep='fgrep --color=auto'
     #alias egrep='egrep --color=auto'
 fi
- 
 # Base16 Shell
 BASE16_SCHEME="ocean"
- BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
+BASE17_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.light.sh"
  [[ -s $BASE16_SHELL  ]] && . $BASE16_SHELL
 
 
