@@ -34,6 +34,8 @@ augroup autoformat
   autocmd FileType proto AutoFormatBuffer clang-format
   " Autoformat c and c++ files on write.
   autocmd FileType c,cc,cpp AutoFormatBuffer clang-format
+   " Autoformat java files on write.
+  autocmd FileType java AutoFormatBuffer clang-format
 augroup END
 
 " Requires for 256 colors in OS X iTerm(2)
