@@ -7,7 +7,6 @@ autoload -U compinit
 compinit
 
 # Add paths that should have been there by default
-export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/Library/Frameworks/Python.framework/Versions/2.6/bin:/opt/local/lib/mysql5/bin:$PATH
 export PATH=/usr/local/sbin:/usr/local/bin:${PATH}
 
 # Appends every command to the history file once it is executed 
