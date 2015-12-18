@@ -108,6 +108,7 @@ set incsearch     " show search matches as you type
 "utility (not to the directory) in the .vimrc file. 
  "http://www.vim.org/scripts/script.php?script_id=273
 let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+set tags=./tags,tags;$HOME
 setlocal tabstop=4
 setlocal softtabstop=4
 setlocal shiftwidth=4

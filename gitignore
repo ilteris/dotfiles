@@ -1,5 +1,6 @@
 # Exclude OS X folder attributes
 .DS_Store
+_DS_Store
 
 #rails
 /log
@@ -7,12 +8,18 @@
 /db/*.sqlite3
 tags
 
+#tmux plugin 
+last/*
 
 
 # Exclude .gitignore
 .gitignore
 tmux/resurrect/last
 tmux/resurrect/*
+# Exclude temp nibs and swap files
+*~.nib
+*.swp
+
 # Exclude temp nibs and swap files
 *~.nib
 *.swp
@@ -42,5 +49,4 @@ logs
 *.log
 pids
 *.pid
-*.seed
 
