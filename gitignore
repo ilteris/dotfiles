@@ -1,5 +1,6 @@
 # Exclude OS X folder attributes
 .DS_Store
+_DS_Store
 
 #rails
 /log
