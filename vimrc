@@ -23,8 +23,9 @@ noremap % v% "highlights between two brackets
 "vimrc shortcut
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC " load vimrc easily"
 "nerdtree
-map <C-n> :NERDTreeToggle<CR>  "togglenerdtree
 autocmd vimenter * NERDTree
+nmap <silent> <C-D> :NERDTreeToggle<CR>
+
 "close vim if the only window left open is a NERDTree
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
