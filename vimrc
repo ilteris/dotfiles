@@ -2,15 +2,6 @@
 let base16colorspace=256
 " Access colors present in 256 colorspace
 set t_Co=256
-"set background=dark
-"colorscheme base16-tomorrow
-set nocp
-call pathogen#infect()
-syntax on
-filetype plugin indent on
-let mapleader="," "mapping for command+t
-set laststatus=2
-call pathogen#helptags()
 "map ctrlP to c-\
 nnoremap <c-\> :CtrlP<CR> 
 nnoremap <leader>w <C-w>v<C-w>l ",w opens a vertical split and makes it active"
@@ -161,3 +152,4 @@ set virtualedit=all
 "let g:airline_theme='luna'
 set tabstop=2 shiftwidth=2 expandtab
 set tags=./tags,tags;$HOME
+highlight LineNr ctermfg=grey
