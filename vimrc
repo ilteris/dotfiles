@@ -1,43 +1,3 @@
-set nocp
-call pathogen#infect()
-call pathogen#helptags()
-source /usr/share/vim/google/google.vim
-filetype plugin indent on
-syntax on
-set undofile                " Save undo's after file closes
-set undodir=$HOME/.vim/undo " where to save undo histories
-set undolevels=100         " How many undos
-set undoreload=1000        " number of lines to save for undo
-
-" Explicitly set the Leader to comma. You you can use '\' (the default),
-" or anything else (some people like ';').
-let mapleader=','
-
-" Load the code formatting plugin. We first load the open-source version. Then,
-" we load the internal google settings. Then, we automatically enable formatting
-" when we write the file for Go, BUILD, proto, and c/cpp files.
-" Use :h codefmt-google or :h codefmt for more details.
-Glug codefmt
-Glug codefmt-google
-Glug relatedfiles
-
-" Wrap autocmds inside an augroup to protect against reloading this script.
-" For more details, see:
-" http://learnvimscriptthehardway.stevelosh.com/chapters/14.html
-augroup autoformat
-  autocmd!
-  " Autoformat BUILD files on write.
-  autocmd FileType bzl AutoFormatBuffer buildifier
-  " Autoformat go files on write.
-  autocmd FileType go AutoFormatBuffer gofmt
-  " Autoformat proto files on write.
-  autocmd FileType proto AutoFormatBuffer clang-format
-  " Autoformat c and c++ files on write.
-  autocmd FileType c,cc,cpp AutoFormatBuffer clang-format
-   " Autoformat java files on write.
-  autocmd FileType java AutoFormatBuffer clang-format
-augroup END
-
 " Requires for 256 colors in OS X iTerm(2)
 let base16colorspace=256
 " Access colors present in 256 colorspace
@@ -54,9 +14,9 @@ noremap % v% "highlights between two brackets
 "vimrc shortcut
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC " load vimrc easily"
 "nerdtree
-silent! map <C-n> :NERDTreeToggle<CR> 
-"togglenerdtree
 autocmd vimenter * NERDTree
+nmap <silent> <C-D> :NERDTreeToggle<CR>
+
 "close vim if the only window left open is a NERDTree
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif

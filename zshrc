@@ -87,3 +87,9 @@ BASE16_SCHEME="3024"
 
 
 
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/ikaplan/Downloads/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/ikaplan/Downloads/google-cloud-sdk/completion.zsh.inc'
