@@ -8,7 +8,8 @@ compinit
 
 # Add paths that should have been there by default
 export PATH=/usr/local/sbin:/usr/local/bin:${PATH}
-
+export FCEDIT=`which vim`
+set -o vi
 # Appends every command to the history file once it is executed 
 setopt inc_append_history 
  # Reloads the history whenever you use it
