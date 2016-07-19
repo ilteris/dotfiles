@@ -7,7 +7,7 @@ autoload -U compinit
 compinit
 
 # Add paths that should have been there by default
-export PATH=/usr/local/sbin:/usr/local/bin:${PATH}
+export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:${PATH}
 export FCEDIT=`which vim`
 set -o vi
 # Appends every command to the history file once it is executed 
@@ -19,6 +19,15 @@ alias ls='ls -G'
 alias ll='ls -lG'
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 export GREP_OPTIONS="--color"
+
+#p4
+export USER_CONFIG=$HOME/.zprofile
+echo >> $USER_CONFIG
+echo . $HOME/.bagpipe/setup.sh $HOME/.bagpipe karma.hot >> $USER_CONFIG
+export PATH=$HOME/bin:$PATH >> $USER_CONFIG
+source $USER_CONFIG
+echo $BAGPIPE_DIR
+
 
 # Unbreak history
 export HISTSIZE=100000
