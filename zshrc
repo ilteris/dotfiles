@@ -102,3 +102,4 @@ source '/Users/ikaplan/Downloads/google-cloud-sdk/path.zsh.inc'
 
 # The next line enables shell command completion for gcloud.
 source '/Users/ikaplan/Downloads/google-cloud-sdk/completion.zsh.inc'
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
