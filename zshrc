@@ -7,7 +7,7 @@ autoload -U compinit
 compinit
 
 # Add paths that should have been there by default
-export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:${PATH}
+export PATH=$HOME/bin:/usr/bin:/usr/local/sbin:/usr/local/bin:${PATH}
 export FCEDIT=`which vim`
 set -o vi
 # Appends every command to the history file once it is executed 
@@ -19,15 +19,6 @@ alias ls='ls -G'
 alias ll='ls -lG'
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 export GREP_OPTIONS="--color"
-
-#p4
-export USER_CONFIG=$HOME/.zprofile
-echo >> $USER_CONFIG
-echo . $HOME/.bagpipe/setup.sh $HOME/.bagpipe karma.hot >> $USER_CONFIG
-export PATH=$HOME/bin:$PATH >> $USER_CONFIG
-source $USER_CONFIG
-echo $BAGPIPE_DIR
-
 
 # Unbreak history
 export HISTSIZE=100000
@@ -101,8 +92,8 @@ BASE16_SCHEME="3024"
 
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/ikaplan/Downloads/google-cloud-sdk/path.zsh.inc'
+source "$HOME/Android/google-cloud-sdk/path.zsh.inc"
 
 # The next line enables shell command completion for gcloud.
-source '/Users/ikaplan/Downloads/google-cloud-sdk/completion.zsh.inc'
+source "$HOME/Android/google-cloud-sdk/completion.zsh.inc"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
