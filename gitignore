@@ -49,4 +49,4 @@ logs
 *.log
 pids
 *.pid
-
+.idea/
