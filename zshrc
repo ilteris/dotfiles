@@ -78,6 +78,9 @@ function whodoneit() {
 
 export EDITOR=/usr/bin/vim
 
+export PATH=$HOME/flutter/bin:$PATH
+export PATH=$HOME/Library/Android/sdk/tools:$HOME/Library/Android/sdk/platform-tools:$PATH
+
 bindkey '^R' history-incremental-search-backward
 
  # enable color support of ls and also add handy aliases
