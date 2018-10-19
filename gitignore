@@ -13,7 +13,6 @@ last/*
 
 
 # Exclude .gitignore
-.gitignore
 tmux/resurrect/last
 tmux/resurrect/*
 # Exclude temp nibs and swap files

@@ -10,8 +10,8 @@ compinit
 export PATH=$HOME/bin:/usr/local/git/current/bin:/usr/local/sbin:/usr/local/bin:${PATH}
 export FCEDIT=`which vim`
 set -o vi
-# Appends every command to the history file once it is executed 
-setopt inc_append_history 
+# Appends every command to the history file once it is executed
+setopt inc_append_history
  # Reloads the history whenever you use it
 setopt share_history
 
@@ -21,14 +21,14 @@ export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 export GREP_OPTIONS="--color"
 
 #p4
-. $HOME/.bagpipe/setup.sh $HOME/.bagpipe ilterisubiquity.hot.corp.google.com "corp-ssh-helper -relay=sup-ssh-relay.corp.google.com --stderrthreshold=INFO %h %p"
+# . $HOME/.bagpipe/setup.sh $HOME/.bagpipe ilteriscloudtop.c.googlers.com "corp-ssh-helper -relay=sup-ssh-relay.corp.google.com --stderrthreshold=INFO %h %p"
 
-export USER_CONFIG=$HOME/.zprofile
-echo >> $USER_CONFIG
-echo . $HOME/.bagpipe/setup.sh $HOME/.bagpipe ilterisubiquity.hot.corp.google.com  >> $USER_CONFIG
-export PATH=$HOME/bin:$PATH >> $USER_CONFIG
-source $USER_CONFIG
-echo $BAGPIPE_DIR
+# export USER_CONFIG=$HOME/.zprofile
+# echo >> $USER_CONFIG
+# echo . $HOME/.bagpipe/setup.sh $HOME/.bagpipe ilteriscloudtop.c.googlers.com  >> $USER_CONFIG
+# export PATH=$HOME/bin:$PATH >> $USER_CONFIG
+# source $USER_CONFIG
+# echo $BAGPIPE_DIR
 
 
 # Unbreak history
@@ -43,15 +43,15 @@ export WORDCHARS='*?[]~&;!$%^<>'
 
 export ACK_COLOR_MATCH='red'
 
-# ACTUAL CUSTOMIZATION OH NOES!
-gd() { git diff $* | view -; }
-gdc() { gd --cached $*; }
-alias pygrep="grep --include='*.py' $*"
-alias rbgrep="grep --include='*.rb' $*"
-alias r=rails
-alias t="script/tests $*"
-alias sr="screen -r"
-alias :q="echo YOU FAIL"
+# # ACTUAL CUSTOMIZATION OH NOES!
+# gd() { git diff $* | view -; }
+# gdc() { gd --cached $*; }
+# alias pygrep="grep --include='*.py' $*"
+# alias rbgrep="grep --include='*.rb' $*"
+# alias r=rails
+# alias t="script/tests $*"
+# alias sr="screen -r"
+# alias :q="echo YOU FAIL"
 
 activate_virtualenv() {
     if [ -f env/bin/activate ]; then . env/bin/activate;
@@ -106,7 +106,16 @@ source "$HOME/google-cloud-sdk/path.zsh.inc"
 source "$HOME/google-cloud-sdk/completion.zsh.inc"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+source /Library/GoogleCorpSupport/srcfs/shell_completion/enable_completion.sh
+# export REMOTE_TSSERVER_HOSTNAME=ilteriscloudtop.c.googlers.com
 export ANDROID_HOME=/Users/ikaplan/Library/Android/sdk
 export PATH=$ANDROID_HOME/platform-tools:$PATH
 export PATH=$ANDROID_HOME/tools:$PATH
+export PATH=/Library/TeX/texbin:$PATH
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_181, x86_64`
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/ikaplan/Desktop/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/ikaplan/Desktop/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/ikaplan/Desktop/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/ikaplan/Desktop/google-cloud-sdk/completion.zsh.inc'; fi
